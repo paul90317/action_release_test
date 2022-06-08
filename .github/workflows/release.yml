@@ -1,0 +1,15 @@
+name: Release
+
+on:
+  push:
+    tags:
+      "v*"
+
+jobs:
+  release:
+    name: "Hello World"
+    run-on: "windows-latest"
+    steps:
+      # 檢查這個 repos
+      uses: actions/checkout@v3
+      run: python release.py
