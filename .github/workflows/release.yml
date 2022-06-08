@@ -6,9 +6,9 @@ on:
       "v*"
 
 jobs:
-  windows:
-    run-on: "windows-latest"
-    steps:
-      name: here
+- windows:
+  - run-on: "windows-latest"
+  - steps:
+    - name: here
     - uses: actions/checkout@v3
     - run: python3 ./release.py
