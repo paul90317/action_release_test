@@ -6,8 +6,9 @@ on:
       "v*"
 
 jobs:
-  check-bats-version:
+  windows:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
-      - run: echo hello world
+        uses: actions/checkout@v3
+        run: echo hello world
+        run: python release.py
