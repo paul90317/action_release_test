@@ -6,7 +6,7 @@ on:
       "v*"
 
 jobs:
-  release:
+  windows:
     run-on: "windows-latest"
     steps:
       name: here
