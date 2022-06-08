@@ -7,8 +7,8 @@ on:
 
 jobs:
   release:
-    name: "Hello World"
     run-on: "windows-latest"
     steps:
+      name: here
     - uses: actions/checkout@v3
     - run: python3 ./release.py
